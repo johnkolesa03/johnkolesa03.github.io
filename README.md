@@ -6,7 +6,7 @@ Projects
 • CSS
 • JS
 In-Class Assignments
-• ICA1
+• ICA1 https://johnkolesa03.github.io
 • ICA2
 • ICA3
 • ICA4
