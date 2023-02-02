@@ -6,7 +6,7 @@
 - CSS
 •-JS
 ## In-Class Assignments
-- [ICA1] (https://johnkolesa03.github.io)
+- [ICA1](https://johnkolesa03.github.io)
 - ICA2 file:///Users/jackkolesa/Documents/GitHub/johnkolesa03.github.io/wa/wa2.html
 - ICA3 https://github.com/johnkolesa03/johnkolesa03.github.io/tree/main/ica
 - ICA4
