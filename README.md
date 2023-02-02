@@ -1,17 +1,17 @@
 # johnkolesa03.github.io
 
 
-Projects
-• HTML
-• CSS
-• JS
-In-Class Assignments
-• ICA1 https://johnkolesa03.github.io
-• ICA2 file:///Users/jackkolesa/Documents/GitHub/johnkolesa03.github.io/wa/wa2.html
-• ICA3
-• ICA4
-• ICA5
-• ICA6
+## Projects
+- HTML
+- CSS
+•-JS
+## In-Class Assignments
+- [ICA1] (https://johnkolesa03.github.io)
+- ICA2 file:///Users/jackkolesa/Documents/GitHub/johnkolesa03.github.io/wa/wa2.html
+- ICA3 https://github.com/johnkolesa03/johnkolesa03.github.io/tree/main/ica
+- ICA4
+- ICA5
+- ICA6
 • ICA7
 • ICA8
 • ICA9
@@ -21,7 +21,7 @@ In-Class Assignments
 • ICA13
 • ICA14
 • ICA15
-Weekly Assignments
+## Weekly Assignments
 • WA1
 • WA2
 • WA3
