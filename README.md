@@ -10,7 +10,7 @@
 - [ICA2](https://johnkolesa03.github.io/wa/wa2.html)
 - [ICA3A](https://johnkolesa03.github.io/ica/ica3a.html)
 - [ICA3B](https://johnkolesa03.github.io/ica/ica3b.html)
-- [ICA4](https://johnkolesa03.github.io/wa/wa3.html)
+- [ICA3](https://johnkolesa03.github.io/wa/wa3.html)
 - [ICA5]
 - [ICA6]
 - [ICA7]
