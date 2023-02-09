@@ -12,18 +12,28 @@ html {
 
 /* Selectors to be matched up with rulesets */
 
-.card article img
+.card article img{
+  float: right;
+  max-height: 100%;
+ 
+}
 .card footer
-.card header
+.card header{
+  width: 35em; 
+  height: 22em; 
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
 .card
-
 /* Rulesets to be matched up with selectors */
 
 {
-  width: 35em;
-  height: 22em;
+  width: 35em; 
+  height: 22em; 
   margin: 5em auto;
-  background-colour: red;
+  background-color: red;
   border: 0.2em solid black;
   border-radius: 1.5em;
 }
@@ -39,5 +49,7 @@ html {
 }
 
 {
-  max-height: 100%
   float: right;
+  max-height: 100%
+ 
+}
