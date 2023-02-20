@@ -1,0 +1,41 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    font-size: 64px;
+}
+
+
+img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#mybackground{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#newsbanner{
+    position:absolute;
+    bottom: -600px;
+    right: 0px;
+}
+
+#newsbanner::after{
+    color:blueviolet;
+    position:absolute;
+    bottom: 100px;
+    right: 50px;
+}
+
+#overlay1{
+    color: aqua;
+    position: fixed;
+    top: 1px;
+    left: 20px;
+}
+
+#overlay2{
+
+}
