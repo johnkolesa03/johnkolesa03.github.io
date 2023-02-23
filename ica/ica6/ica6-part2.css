@@ -1,0 +1,41 @@
+body{
+    background-color: olive;
+}
+
+
+#flex-parent{
+    display:flex;
+    background-color: orangered;
+}
+#flex-parent p{
+    padding:5vw;
+}
+
+
+#grid-parent{
+    display:grid;
+}
+
+#grid-parent h1{
+    background-color: grey;
+    padding:3vw 5vh;
+    margin:5vw;
+    
+}
+
+
+.grid-parent {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: olive;
+    padding: 10px;
+    }
+      
+    .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+     font-size: 30px;
+    text-align: center;
+    }
