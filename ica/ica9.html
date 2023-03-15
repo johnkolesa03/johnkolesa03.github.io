@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button{
+            border: 10px solid darkmagenta;
+            border border-radius: 50px;
+            background-color: magenta;
+            padding: 25px 50px;
+            width: 250px;  
+            font-size: 50px;
+        }
+
+        p{
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="button">
+        <p>Click me!</p>
+    </div>
+
+    <script>
+        console.log("Hellow, World!");
+        let btn = document.querySelector("#button");
+        // console.log(btn);
+
+        functioin changeBtn() {
+            // console.log("This worked!")
+            // btn.textContent = "TEST";
+            btn.style.backgroundColor = "darkmagenta";
+            btn.style.border = "2px solid magenta";
+            btn.style.color = "white";
+        }
+
+        btn.addEventListener('click', changBtn);
+
+
+
+
+    </script>
+</body>
+</html>
