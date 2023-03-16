@@ -8,7 +8,7 @@
     <style>
         #button{
             border: 10px solid darkmagenta;
-            border border-radius: 50px;
+            border-radius: 50px;
             background-color: magenta;
             padding: 25px 50px;
             width: 250px;  
@@ -21,27 +21,49 @@
     </style>
 </head>
 <body>
+
     <div id="button">
         <p>Click me!</p>
     </div>
 
-    <script>
-        console.log("Hellow, World!");
-        let btn = document.querySelector("#button");
-        // console.log(btn);
+    <button onclick="myFunction()">Click Me</button>
 
-        functioin changeBtn() {
-            // console.log("This worked!")
-            // btn.textContent = "TEST";
-            btn.style.backgroundColor = "darkmagenta";
-            btn.style.border = "2px solid magenta";
-            btn.style.color = "white";
+    <script>
+
+        let btn = document.querySelector("#button")
+
+        function changeBtn(){
+
+            btn.textContent = "CLICKED";
+            btn.style.backgroundColor="darkslateblue";
+            btn.style.color ="white";
+            btn.style.border = '2px solid magenta'
+            alert('You clicked me!')
+        };
+
+        btn.addEventListener('click',changeBtn);
+
+        function checkGuess(){
+
+            let value = userGuess.value*2;
+            alert(value);
         }
 
-        btn.addEventListener('click', changBtn);
+        let guessBtn = document.querySelector(".guessSubmit")
+        let userGuess = document.querySelector(".guessField")
+
+        guessBtn.addEventListener('click', checkGuess)
 
 
+        
 
+
+    function myFunction() {
+        var x = document.createElement("BUTTON");
+        var t = document.createTextNode("Ha nah m8");
+        x.appendChild(t);
+        document.body.appendChild(x);
+    }
 
     </script>
 </body>
