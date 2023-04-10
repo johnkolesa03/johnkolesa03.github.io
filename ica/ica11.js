@@ -17,7 +17,7 @@ async function getQuote() {
         const json = await response.json();
 
         displayQuote(json.question);
-        showAnswer(json.answer);
+        displayAnswer(json.answer);
 
     }
     catch (err){
