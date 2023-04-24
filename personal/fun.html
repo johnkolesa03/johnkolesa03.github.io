@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/wa/wa13-bad-volume.css">
+  <script defer src="/wa/wa13-bad-volume.js"></script>
+  <style>
+    #volume {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="volume">
+    <div>
+      <p>Please select the volume you'd like</p>
+      <p class="output">50</p>
+    </div>
+    <div><!--plus/minus volume changer-->
+      <form>
+        <input class="minus-button" type="button" name="minus-button" value="MINUS"></input>
+        <input class="plus-button" type="button" name="plus-button" value="PLUS"></input>
+        <input class="reset-button" type="button" name="reset-button" value="RESET"></input>
+        <input class="random-button" type="button" name="random-button" value="RANDOM"></input>
+        <input class="submit-button" type="button" name="submit-button" value="SUBMIT"></input>
+      </form>
+    </div>
+    <div><!--This will be a slider-->
+      <div class="slidecontainer">
+        <p>Please select the volume you'd like.</p>
+        <input type="range" min="1" max="100"  class="slider" id="myRange">
+        <input class="slider-submit-button" type="button" name="slider-submit-button" value="SUBMIT"></input>
+        <p class="slider-output"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function moveVolumeDiv() {
+      var volumeDiv = document.getElementById('volume');
+      var xPos = Math.floor(Math.random() * window.innerWidth);
+      var yPos = Math.floor(Math.random() * window.innerHeight);
+      volumeDiv.style.left = xPos + 'px';
+      volumeDiv.style.top = yPos + 'px';
+    }
+
+    setInterval(moveVolumeDiv, 1000);
+  </script>
+</body>
+</html>
