@@ -1,57 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<html>
+  <head>
+    <title>Textures - A-Frame School</title>
+    <meta name="description" content="Textures - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="monolith" src="https://cdn.glitch.global/2feb5f1a-03bf-409d-b3de-4f34e4c2560b/Monolith.obj?v=1681773262867"></a-asset-item>
+        <a-asset-item id="ufo" src="https://cdn.glitch.global/2feb5f1a-03bf-409d-b3de-4f34e4c2560b/UFO.obj?v=1682465350487"></a-asset-item>
+        <a-asset-item id="ship" src="https://cdn.glitch.global/2feb5f1a-03bf-409d-b3de-4f34e4c2560b/ship.obj?v=1682465952718"></a-asset-item>
+      </a-assets>
 
-  <link rel="stylesheet" href="/wa/wa13-bad-volume.css">
-  <script defer src="/wa/wa13-bad-volume.js"></script>
-  <style>
-    #volume {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background-color: blue;
-    }
-  </style>
-</head>
-<body>
-  <div id="volume">
-    <div>
-      <p>Please select the volume you'd like</p>
-      <p class="output">50</p>
-    </div>
-    <div><!--plus/minus volume changer-->
-      <form>
-        <input class="minus-button" type="button" name="minus-button" value="MINUS"></input>
-        <input class="plus-button" type="button" name="plus-button" value="PLUS"></input>
-        <input class="reset-button" type="button" name="reset-button" value="RESET"></input>
-        <input class="random-button" type="button" name="random-button" value="RANDOM"></input>
-        <input class="submit-button" type="button" name="submit-button" value="SUBMIT"></input>
-      </form>
-    </div>
-    <div><!--This will be a slider-->
-      <div class="slidecontainer">
-        <p>Please select the volume you'd like.</p>
-        <input type="range" min="1" max="100"  class="slider" id="myRange">
-        <input class="slider-submit-button" type="button" name="slider-submit-button" value="SUBMIT"></input>
-        <p class="slider-output"></p>
-      </div>
-    </div>
-  </div>
+      <a-entity position="0 2 0">
+        <a-camera></a-camera>
+      </a-entity>
 
-  <script>
-    function moveVolumeDiv() {
-      var volumeDiv = document.getElementById('volume');
-      var xPos = Math.floor(Math.random() * window.innerWidth);
-      var yPos = Math.floor(Math.random() * window.innerHeight);
-      volumeDiv.style.left = xPos + 'px';
-      volumeDiv.style.top = yPos + 'px';
-    }
+      <a-sky src="https://cdn.glitch.global/2feb5f1a-03bf-409d-b3de-4f34e4c2560b/desertVR.jpg?v=1681773251153"></a-sky>
 
-    setInterval(moveVolumeDiv, 1000);
-  </script>
-</body>
+      <a-obj-model src="#monolith" position="80 -20 -100" scale="1 1 1" color="black" rotation="-90 145 0"></a-obj-model>
+      <a-entity gltf-model="#monolith"></a-entity>
+      <a-collada-model src="#monolith"></a-collada-model>
+
+      <a-obj-model src="#ufo" position="80 -5 80" scale="5 5 5" color="silver" rotation="0 145 0"></a-obj-model>
+      <a-entity gltf-model="#ufo"></a-entity>
+      <a-collada-model src="#ufo"></a-collada-model>
+
+      <a-obj-model src="#ship" position="80 500 -100" scale="5 5 5" color="grey" rotation="90 0 0"></a-obj-model>
+      <a-entity gltf-model="#ship"></a-entity>
+      <a-collada-model src="#ship"></a-collada-model>
+    </a-scene>
+  </body>
 </html>
+
+
