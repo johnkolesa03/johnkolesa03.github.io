@@ -1,7 +1,34 @@
+<!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <p>Hello, World!</p>
-        <p>My name is JACK</p> <!-- Change NAME to your name! -->
-    </body>
+  <head>
+    <title>Textures - A-Frame School</title>
+    <meta name="description" content="Textures - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="ufo" src="https://cdn.glitch.global/2feb5f1a-03bf-409d-b3de-4f34e4c2560b/UFO.obj?v=1682465350487"></a-asset-item>
+        <a-asset-item id="ship" src="https://cdn.glitch.global/2feb5f1a-03bf-409d-b3de-4f34e4c2560b/ship.obj?v=1682465952718"></a-asset-item>
+      </a-assets>
+
+      <a-entity position="0 1.6 0">
+        <a-camera></a-camera>
+      </a-entity>
+
+      <a-sky src="https://cdn.glitch.global/919417ff-9d4b-4092-9cc6-c5d7862dd499/space.jpg?v=1683065125539"></a-sky>
+
+      <a-obj-model src="#ufo" position="80 -5 80" scale="5 5 5" color="silver" rotation="0 145 0" height="1" width="1"></a-obj-model>
+
+      <a-entity gltf-model="#ufo"></a-entity>
+
+      <a-collada-model src="#ufo"></a-collada-model>
+
+
+      <a-obj-model src="#ship" position="80 500 -100" scale="5 5 5" color="grey" rotation="90 0 0"></a-obj-model>
+      <a-entity gltf-model="#ship"></a-entity>
+      <a-collada-model src="#ship"></a-collada-model>
+    </a-scene>
+  </body>
 </html>
